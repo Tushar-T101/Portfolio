@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/956930c71c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="tushar-logo.png" class="logo" style="width: 450px;height: 500; margin-top: 7px; margin-left: -20px;" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I'm <span>Tushar</span><br />
+            Currently in India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Tushar1-removebg-preview.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Student with a growth mindset who keeps looking for things to inculcate from seniors and mentors. Good at creative thinking which is crucial in problem solving at times. Work oriented and grasps for results at the same time.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />
+                  Designing web app interfaces using HTML and CSS.
+                </li>
+                <li>
+                  <span>JavaScript</span><br />
+                  Completing a full web development pack. Quite handy with JS as well.
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />
+                  Designing models using machine learning concepts.
+                </li>
+                <li>
+                  <span>C/C++</span><br />
+                  Never forget the roots. Advanced understanding of C and C++.
+                </li>
+                <li>
+                  <span>MySQL</span><br />
+                  Comfortable with MySQL database queries.
+                </li>
+              </ul>
+            </div>
+
+            <!-- -----------Experience---------- -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-Current</span><br />
+                  Intern at Incubit Inc. Designed an application for a pharmacy
+                  delivery company inclusive of a customer end, a delivery boy
+                  end and admin end along with use of MySQL for database.
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Smart India Hackathon - Teamed with 5 people and pursued
+                  learning opportunities to advance knowledge and present new
+                  ideas. Contributed to team success by putting forward
+                  innovative ideas for museum navigation app and presenting
+                  solutions to forthcoming problems.
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  In-house Project, Amity University Noida - Built a Machine
+                  Learning model that conducts a Movie Review Sentiment Analyses
+                  using a Simple Binary Classification with the utilization of a
+                  pre-existing IMDB dataset of around 50,000 rows of data.
+                </li>
+              </ul>
+            </div>
+
+            <!-- ---------Education-------- -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-2024</span><br />
+                  B.Tech (CSE), Hons in Artificial Intelligence and Machine
+                  Learning from Amity University, Noida
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  Certificate of Higher Education (CBSE) from G.D. Goenka Public
+                  School, Indirapuram
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------Services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Full Stack Web Development using HTML, CSS and JavaScript.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Data Analysis</h2>
+            <p>
+              Thorough data analysis using Machine Learning Models that offer very high accuracy.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              App development using PHP Laravel, HTML, CSS and MySQl.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------Portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>AirMedz App</h3>
+              <p>
+                This app was made during a 6 month long internship (refer to experience tab).<br> This app is built for Phillipines, it allows its users to order pharmaceutical drugs and get them delivered to their doorstep.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The App lets you connect to all the talented developers around
+                the world. Download it from Playstore/Appstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The App lets you connect to all the talented developers around
+                the world. Download it from Playstore/Appstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ------------Contact------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>tushar.tugnait02@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>9910529707</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/TusharTugnait01/photos"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Tushar_Tugnait"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/tushar_tugnait/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/tushar-tugnait-1276a9243/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a class="btn btn--2" href="Tushar - CV.pdf" download
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn--2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169 Tushar Tugnait</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
